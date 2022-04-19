@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+main{
+    
+    font-size: 12px;
+    text-decoration: none;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.logo{
+    width: 250px;
+    height: 25%;
+    margin: 0px;
+}
+
+.buscador{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.buscador input{
+    padding-left: 5px;
+}
+
+.buscador i{
+    padding-left: 5px;
+}
+
+.cuotas{
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.navegador{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8vw;
+    padding: 0 0 20px 0;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+.link{
+    padding: 0 0 0 20px;
+}
+
+nav ul li i {
+    padding-left: 2px;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+#menu{
+    color: white;
+    margin: 10px;
+    background-color: #1259c3;;
+    border-radius: 10%;
+    padding: 10px;
+    align-content: center;
+}
+
+.banner{
+    width: 100vw;
+    padding: 0;
+    display: none;
+}
+
+/* Cuerpo */
+
+.login{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #ebebeb;
+}
+
+
+form{
+    text-align: center;
+    background-color: white;
+    width: 30vw;
+    border: 1px rgba(0,0,0, 0.2) solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre-de-usuario, .contraseña, .boton-enviar{
+    margin: 12px;
+    width: 85%;
+}
+
+.container div input{
+    width: 90%;
+    height: 25px;
+    border: white 1px solid;
+    border-radius: 4px;
+    padding: 4px 0 4px 5px;
+    box-shadow: 0px 0px 3px rgb(100, 100, 100);
+}
+
+
+.boton-enviar button{
+    width: 90%;
+    height: 25px;
+    background-color: #3483fa;
+    color: white;
+    text-align: center;
+    border: 1px solid #3483fa;
+    border-radius: 4px;
+    padding: 4px 0 4px 5px;
+    transition: all 450ms;
+}
+
+.boton-enviar button:hover{
+    border: solid 1px #0022AA;
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    box-sizing: border-box;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div{
+    box-sizing: border-box;
+    padding-top: 40px;
+    margin-bottom: 15px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 300ms;
+} 
+
+footer div i:hover{
+    color:#36a33a;
+}
+
+footer div p{
+    width: 50%;
+    align-self: center; 
+}
+
+
+.copyright{
+    text-align: left;
+    box-sizing: border-box;
+    opacity: 50%;
+    margin: 0px 10px 15px 10px;
+}
+
+.copyright h4{
+    text-align: left;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 360px){
+    .navegador{
+        display: none;
+    }
+    .banner{
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-completo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 0 10px;
+        padding: 10px 0 10px 0;
+    }
+    .logo{
+        width: 150px;
+        height: 25%;
+        flex-grow: 0.50;
+    }
+    .buscador{
+        margin: 0 0 0 10px;
+        padding: 0;
+        flex-grow: 0.50;
+    }
+
+    /* Cuerpo */
+
+    form{
+        text-align: center;
+        background-color: white;
+        width: 90vw;
+        border: 1px rgba(0,0,0, 0.2) solid;
+        border-radius: 10px;
+        padding: 20px;
+        align-self: center;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        background-color: #ebebeb;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer div{
+        width: 80vw;
+    }
+    footer div p{
+        width: 100%;
+    }
+    .copyright{
+        width: 100vw;
+    }
+    .copyright h4{
+        text-align: left;
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media(min-width: 361px) and (max-width: 768px){ 
+    .burger-menu{
+        display: none;
+    }
+    .links-header{
+        padding-bottom: 20px;
+    }
+    .productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    }
+    .producto{
+        margin: 30px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .header-completo{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 0 20px 0 20px;
+        padding: 10px 0 10px 0;
+    }
+    .logo{
+        width: 150px;
+        height: 25%;
+        align-self: center;
+        padding: 0;
+    }
+    .buscador{
+        padding: 0 0 0 25px;
+        align-self: center;
+        width: 200px;
+        margin: 0 0 0 0px;
+    }
+    .todo-cuotas{
+        padding: 0;
+        align-self: center;
+    }
+    .cuotas{
+        margin: 0;
+    }
+    .navegador{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 20px 0 20px;
+        padding: 0 0 20px 0;
+    }
+    
+    .links{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    .link{
+        padding: 0 0 0 10px;
+    }
+
+    /* Cuerpo */
+
+    form{
+        text-align: center;
+        background-color: white;
+        width: 58vw;
+        border: 1px rgba(0,0,0, 0.2) solid;
+        border-radius: 10px;
+        padding: 20px;
+        align-self: center;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        background-color: #ebebeb;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer div{
+        width: 80vw;
+    }
+    footer div p{
+        width: 100%;
+    }
+    .copyright{
+        width: 100vw;
+    }
+    .copyright h4{
+        text-align: left;
+        width: 100%;
+    }
+
+}
+
+
+@media(min-width: 769px) and (max-width:1199px){
+    .burger-menu{
+        display: none;
+    }
+    .links-header{
+        padding-bottom: 20px;
+    }
+    .productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    }
+    .producto{
+        margin: 30px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .header-completo{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 3vw 0 3vw;
+        padding: 10px 0 10px 0;
+    }
+    .logo{
+        width: 270px;
+        height: 25%;
+        align-self: center;
+        padding: 0;
+    }
+    .buscador{
+        padding: 0 ;
+        align-self: center;
+        margin: 0;
+    }
+    .todo-cuotas{
+        padding: 0;
+        align-self: center;
+    }
+    .cuotas{
+        margin: 0;
+    }
+
+    .navegador{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 3vw 0 3vw;
+        padding: 0 0 20px 0;
+    }
+    
+    .links{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    .link{
+        padding: 0 0 0 10px;
+    }
+
+    /* Cuerpo */
+
+    form{
+        text-align: center;
+        background-color: white;
+        width: 40vw;
+        border: 1px rgba(0,0,0, 0.2) solid;
+        border-radius: 10px;
+        padding: 20px;
+        align-self: center;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        background-color: #ebebeb;
+    }
+}
+
+@media(min-width:1200px){
+    .burger-menu{
+        display: none;
+    }
+    .links-header{
+        padding-bottom: 20px;
+    }
+    .productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    }
+    .producto{
+        margin: 30px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .header-completo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between ;
+        align-items: center;
+        margin: 0 5vw 0 5vw;
+        padding: 10px 0 10px 0;
+    }
+    .logo{
+        width: 350px;
+        height: 35%;
+        align-self: center;
+        padding: 0;
+    }
+    .buscador{
+        align-self: center;
+        padding: 0;
+        margin: 0;
+        flex-grow: 0.30;
+    }
+    .buscador input{
+        width: 90%;
+    }
+    .todo-cuotas{
+        padding: 0;
+        align-self: center;
+    }
+    .cuotas{
+        margin: 0;
+    }
+
+    .navegador{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5vw 0 5vw;
+        padding: 0 0 20px 0;
+    }
+    
+    .links{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .link{
+        padding: 0 0 0 10px;
+    }
+}
